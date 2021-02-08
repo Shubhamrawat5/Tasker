@@ -154,6 +154,13 @@ input[type="checkbox"]:checked + li {
   font-size: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  cursor: pointer;
+}
+
 #plus-sign {
   width: 37px;
 }
