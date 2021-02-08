@@ -1,5 +1,5 @@
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   background-color: #131419;
   background-image: url("../images/bg.svg");
   display: inline-flex;
@@ -88,7 +88,11 @@ ul {
 
 li {
   margin-left: 3px;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+.user-li {
+  font-size: 19px;
 }
 
 .list-item {
@@ -113,7 +117,7 @@ input[type="checkbox"] {
   flex-shrink: 0;
 }
 
-input[type=checkbox]:checked+li {
+input[type="checkbox"]:checked + li {
   text-decoration: line-through;
   color: tomato;
   opacity: 0.6;
@@ -125,7 +129,7 @@ input[type=checkbox]:checked+li {
   border-width: 0;
   border-radius: 10px;
   outline: none;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 2.6px 40px 1.4px 12px;
   color: #841717;
   font-weight: 500;
@@ -154,7 +158,7 @@ input[type=checkbox]:checked+li {
   width: 37px;
 }
 
-@media (max-width:550px) {
+@media (max-width: 550px) {
   .container {
     width: 75%;
   }
@@ -168,7 +172,7 @@ input[type=checkbox]:checked+li {
   }
 
   #user-info p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   #todo-info h4 {
@@ -192,7 +196,7 @@ input[type=checkbox]:checked+li {
   input[type="checkbox"] {
     height: 16px;
     width: 16px;
-    margin: 3px 12px;
+    margin: 4px 8px;
   }
 
   .input-box {
@@ -215,6 +219,15 @@ input[type=checkbox]:checked+li {
 
   #plus-sign {
     width: 32px;
+  }
+
+  .user-li {
+    font-size: 16px;
+  }
+  .user-ul {
+    width: 80vw;
+    position: relative;
+    left: -24px;
   }
 }
 

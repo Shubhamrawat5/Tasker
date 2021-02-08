@@ -39,7 +39,7 @@
 
     <section id="todos-section">
       <form class="" action="/user/<%=User%>" method="post">
-        <ul>
+        <ul class="user-ul">
           <% for(let todo of todos){     %>
           <div class="">
 
@@ -51,7 +51,7 @@
               <% } else { %>
               <input type="checkbox" name="<%=todo.todoItem%>" value="">
               <%  } %>
-              <li><%= todo.todoItem %> </li>
+              <li class="user-li"><%= todo.todoItem %> </li>
             </div>
           </div>
 
